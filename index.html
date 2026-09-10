@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Seaside Smashburger — Smashed by the Shore</title>
-<meta name="description" content="Seaside Smashburger. Thin-smashed, hard-seared, stacked high. Four builds, no upsell ladder, fresh off the flat-top since 2019.">
+<title>Seaside Smashies — Smashburger in Staad am Bodensee</title>
+<meta name="description" content="Seaside Smashies in Staad, Schweiz: handgemachte Smashburger, knusprige Fries und frische Drinks direkt am Bodensee. Take-away, Lieferung, Hunde willkommen. ★ 4.8 Google · ★ 4.9 Just Eat.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230b0d0c'/%3E%3Cpath d='M14 55c10-14 24-14 36-2 12 12 26 12 36-2' stroke='%23d92b3f' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FastFoodRestaurant",
+  "name": "Seaside Smashies",
+  "servesCuisine": "American, Burger",
+  "priceRange": "CHF 10–20",
+  "telephone": "+41718555056",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Hauptstrasse 2",
+    "postalCode": "9422",
+    "addressLocality": "Staad",
+    "addressCountry": "CH"
+  },
+  "acceptsReservations": "False",
+  "sameAs": ["https://www.tiktok.com/@seasidesmashies"],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "187"
+  }
+}
+</script>
 </head>
 <body>
 
@@ -22,7 +46,7 @@
   <div class="preloader-mark">
     <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M14 55c10-14 24-14 36-2 12 12 26 12 36-2" stroke="#d92b3f" stroke-width="6" fill="none" stroke-linecap="round" class="wave-path"/></svg>
   </div>
-  <div class="preloader-word">SEASIDE&nbsp;SMASHBURGER</div>
+  <div class="preloader-word">SEASIDE&nbsp;SMASHIES</div>
 </div>
 
 <header class="nav" id="siteNav">
@@ -31,17 +55,17 @@
       <span class="brand-mark" aria-hidden="true">
         <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="4"/><path d="M14 55c10-14 24-14 36-2 12 12 26 12 36-2" stroke="currentColor" stroke-width="7" fill="none" stroke-linecap="round"/></svg>
       </span>
-      <span class="brand-word">SEASIDE<em>SMASHBURGER</em></span>
+      <span class="brand-word">SEASIDE<em>SMASHIES</em></span>
     </a>
     <nav class="nav-links" id="navLinks">
-      <a href="#menu" data-nav>Menu</a>
-      <a href="#build" data-nav>Build Yours</a>
-      <a href="#story" data-nav>Story</a>
-      <a href="#visit" data-nav>Locations</a>
+      <a href="#ueber-uns" data-nav>Über uns</a>
+      <a href="#speisekarte" data-nav>Speisekarte</a>
+      <a href="#bewertungen" data-nav>Bewertungen</a>
+      <a href="#standort" data-nav>Standort</a>
     </nav>
     <div class="nav-actions">
-      <a href="#visit" class="btn btn-ghost btn-sm">Order Now</a>
-      <button class="nav-burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+      <a href="#standort" class="btn btn-ghost btn-sm">Jetzt bestellen</a>
+      <button class="nav-burger" id="navBurger" aria-label="Menü öffnen" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -56,17 +80,26 @@
       <div class="hero-checker" aria-hidden="true"></div>
 
       <div class="hero-copy">
-        <p class="eyebrow">Seaside Smashburger — Smashed Daily Since 2019</p>
-        <h1 class="hero-title">
-          <span class="line">SMASHED</span>
-          <span class="line">BY&nbsp;THE</span>
-          <span class="line accent">SHORE.</span>
-        </h1>
-        <p class="hero-sub">Thin-smashed, hard-seared, stacked high — built the way the coast<br class="br-desktop"> does everything: fast, fresh, and completely unbothered.</p>
-        <div class="hero-actions">
-          <a href="#menu" class="btn btn-primary">See The Menu</a>
-          <a href="#build" class="btn btn-outline">Build Your Own</a>
+        <div class="hero-badges">
+          <span class="badge">★ 4.8 Google</span>
+          <span class="badge">★ 4.9 Just Eat</span>
         </div>
+        <h1 class="hero-title">
+          <span class="line">GESMASHT.</span>
+          <span class="line">GEGRILLT.</span>
+          <span class="line accent">SEASIDE.</span>
+        </h1>
+        <p class="hero-sub">Handgemachte Smashburger, direkt am Bodensee gebraten — saftig im<br class="br-desktop"> Kern, kross am Rand. Frisch für dich gesmasht in Staad.</p>
+        <div class="hero-actions">
+          <a href="#speisekarte" class="btn btn-primary">Speisekarte ansehen</a>
+          <a href="https://www.just-eat.ch" target="_blank" rel="noopener" class="btn btn-outline">Auf Just Eat bestellen</a>
+        </div>
+        <ul class="hero-facts">
+          <li>Take-away</li>
+          <li>Lieferung</li>
+          <li>Hunde willkommen</li>
+          <li>Sitzplätze im Freien</li>
+        </ul>
       </div>
 
       <svg class="burger-rig" id="burgerRig" viewBox="0 0 900 900" aria-hidden="true">
@@ -156,12 +189,12 @@
         </g>
       </svg>
 
-      <div class="hero-scrollcue" aria-hidden="true"><span>Scroll</span><i></i></div>
+      <div class="hero-scrollcue" aria-hidden="true"><span>Scrollen</span><i></i></div>
       <div class="hero-hud" id="heroHud" aria-hidden="true">
-        <span class="hud-step" data-step="0">01 · Loose</span>
-        <span class="hud-step" data-step="1">02 · Sauced</span>
-        <span class="hud-step" data-step="2">03 · Stacked</span>
-        <span class="hud-step" data-step="3">04 · Smashed</span>
+        <span class="hud-step" data-step="0">01 · Locker</span>
+        <span class="hud-step" data-step="1">02 · Sauce</span>
+        <span class="hud-step" data-step="2">03 · Gestapelt</span>
+        <span class="hud-step" data-step="3">04 · Gesmasht</span>
       </div>
     </div>
   </section>
@@ -169,304 +202,303 @@
   <!-- MARQUEE -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <span>100% FRESH BEEF</span><span>·</span><span>SMASHED TO ORDER</span><span>·</span><span>NEVER FROZEN</span><span>·</span><span>CRUST OVER EVERYTHING</span><span>·</span><span>CAUGHT COAST, GRILLED FRESH</span><span>·</span><span>NO SHORTCUTS</span><span>·</span>
-      <span>100% FRESH BEEF</span><span>·</span><span>SMASHED TO ORDER</span><span>·</span><span>NEVER FROZEN</span><span>·</span><span>CRUST OVER EVERYTHING</span><span>·</span><span>CAUGHT COAST, GRILLED FRESH</span><span>·</span><span>NO SHORTCUTS</span><span>·</span>
+      <span>FRISCH GESMASHT</span><span>·</span><span>NIE TIEFGEKÜHLT</span><span>·</span><span>TAKE-AWAY &amp; LIEFERUNG</span><span>·</span><span>HUNDE WILLKOMMEN</span><span>·</span><span>DIREKT AM BODENSEE</span><span>·</span><span>★ 4.8 GOOGLE</span><span>·</span>
+      <span>FRISCH GESMASHT</span><span>·</span><span>NIE TIEFGEKÜHLT</span><span>·</span><span>TAKE-AWAY &amp; LIEFERUNG</span><span>·</span><span>HUNDE WILLKOMMEN</span><span>·</span><span>DIREKT AM BODENSEE</span><span>·</span><span>★ 4.8 GOOGLE</span><span>·</span>
     </div>
   </div>
 
   <!-- STATS -->
   <section class="stats reveal-group">
     <div class="stat reveal">
-      <span class="stat-num" data-count="220" data-suffix="G">0</span>
-      <span class="stat-label">Fresh Beef, Per Patty</span>
+      <span class="stat-num" data-count="4" data-suffix=".8">0</span>
+      <span class="stat-label">Google Bewertung</span>
     </div>
     <div class="stat reveal">
-      <span class="stat-num" data-count="260" data-suffix="°C">0</span>
-      <span class="stat-label">Flat-Top Sear</span>
+      <span class="stat-num" data-count="187" data-suffix="">0</span>
+      <span class="stat-label">Google Rezensionen</span>
     </div>
     <div class="stat reveal">
-      <span class="stat-num" data-count="0" data-suffix="">0</span>
-      <span class="stat-label">Days Spent In A Freezer</span>
+      <span class="stat-num" data-count="100" data-suffix="%">0</span>
+      <span class="stat-label">Frisch Gesmasht, Nie TK</span>
     </div>
     <div class="stat reveal">
-      <span class="stat-num" data-count="4" data-suffix=" MIN">0</span>
-      <span class="stat-label">Griddle To Table</span>
+      <span class="stat-num" data-count="6" data-suffix="">0</span>
+      <span class="stat-label">Tage Die Woche Geöffnet</span>
     </div>
   </section>
 
-  <!-- MENU -->
-  <section class="section" id="menu">
+  <!-- ÜBER UNS -->
+  <section class="section" id="ueber-uns">
     <div class="container">
       <div class="section-head reveal">
-        <p class="eyebrow">The Menu</p>
-        <h2 class="h2">Four Builds. <span class="accent">No Upsell Ladder.</span></h2>
-        <p class="lead">We don't do thirty combinations. We do four, and we do them right — plus the sides that were never really optional.</p>
-      </div>
-
-      <div class="tabs reveal">
-        <button class="tab active" data-tab="classics">Smash Classics</button>
-        <button class="tab" data-tab="sides">Sides &amp; Shakes</button>
-      </div>
-
-      <div class="menu-grid" data-panel="classics">
-        <article class="menu-card reveal">
-          <div class="menu-card-top">
-            <span class="menu-tag">Single</span>
-            <span class="menu-price">$8.50</span>
-          </div>
-          <h3>The Original</h3>
-          <p>Single smash patty, American cheese, shredded lettuce, pickles, house sauce, toasted potato bun.</p>
-        </article>
-        <article class="menu-card reveal">
-          <div class="menu-card-top">
-            <span class="menu-tag">Double</span>
-            <span class="menu-price">$11.00</span>
-          </div>
-          <h3>The Double Tide</h3>
-          <p>Double smash patty, double American, caramelized onion, pickles, house sauce.</p>
-        </article>
-        <article class="menu-card reveal">
-          <div class="menu-card-top">
-            <span class="menu-tag">Double · Spiced</span>
-            <span class="menu-price">$12.00</span>
-          </div>
-          <h3>The Reef Stack</h3>
-          <p>Double patty, pepper-jack, pickled jalapeño, chipotle sauce, crispy onions.</p>
-        </article>
-        <article class="menu-card reveal">
-          <div class="menu-card-top">
-            <span class="menu-tag">Vegetarian</span>
-            <span class="menu-price">$10.50</span>
-          </div>
-          <h3>The Low Tide</h3>
-          <p>Smashed mushroom-and-bean patty, cheese, lettuce, tomato, house sauce.</p>
-        </article>
-      </div>
-
-      <div class="menu-grid" data-panel="sides" hidden>
-        <article class="menu-card reveal">
-          <div class="menu-card-top"><span class="menu-tag">Side</span><span class="menu-price">$4.50</span></div>
-          <h3>Hand-Cut Fries</h3>
-          <p>Sea-salted, twice through the fryer, finished in clean peanut oil.</p>
-        </article>
-        <article class="menu-card reveal">
-          <div class="menu-card-top"><span class="menu-tag">Side</span><span class="menu-price">$5.50</span></div>
-          <h3>Beer-Battered Onion Rings</h3>
-          <p>Thick-cut, shattering crust, served with house sauce for dipping.</p>
-        </article>
-        <article class="menu-card reveal">
-          <div class="menu-card-top"><span class="menu-tag">Shake</span><span class="menu-price">$6.00</span></div>
-          <h3>Salted Caramel Shake</h3>
-          <p>Hand-spun, slow-churned, finished with a ribbon of sea-salt caramel.</p>
-        </article>
-        <article class="menu-card reveal">
-          <div class="menu-card-top"><span class="menu-tag">Shake</span><span class="menu-price">$6.00</span></div>
-          <h3>Sea Salt Vanilla Shake</h3>
-          <p>Madagascar vanilla, hand-spun, a pinch of flaked sea salt on top.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- BUILD YOURS -->
-  <section class="section section-alt" id="build">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">Build Your Own</p>
-        <h2 class="h2">No Rules. <span class="accent">Just Layers.</span></h2>
-        <p class="lead">Patty count, cheese, toppings, sauce. Watch it stack, live, as you build it.</p>
-      </div>
-
-      <div class="configurator reveal">
-        <div class="config-stack">
-          <div class="stack-plate" id="stackPlate">
-            <div class="stack-layer" data-layer="bun-bottom">Potato Bun</div>
-          </div>
-          <div class="stack-total">
-            <span>Total</span>
-            <strong id="totalPrice">$3.00</strong>
-          </div>
-        </div>
-
-        <div class="config-controls">
-          <div class="control-block">
-            <h4>Patty Count</h4>
-            <div class="stepper" id="pattyStepper">
-              <button type="button" data-step="-1" aria-label="Remove patty">–</button>
-              <span id="pattyCount">1</span>
-              <button type="button" data-step="1" aria-label="Add patty">+</button>
-            </div>
-          </div>
-
-          <div class="control-block">
-            <h4>Cheese</h4>
-            <div class="pill-group" data-group="cheese">
-              <button type="button" class="pill" data-value="none">None</button>
-              <button type="button" class="pill active" data-value="american">American</button>
-              <button type="button" class="pill" data-value="pepperjack">Pepper-Jack</button>
-              <button type="button" class="pill" data-value="cheddar">Cheddar</button>
-            </div>
-          </div>
-
-          <div class="control-block">
-            <h4>Toppings</h4>
-            <div class="pill-group multi" data-group="toppings">
-              <button type="button" class="pill active" data-value="lettuce">Lettuce</button>
-              <button type="button" class="pill active" data-value="tomato">Tomato</button>
-              <button type="button" class="pill active" data-value="pickles">Pickles</button>
-              <button type="button" class="pill" data-value="onion">Caramelized Onion</button>
-              <button type="button" class="pill" data-value="jalapeno">Jalapeño</button>
-              <button type="button" class="pill" data-value="crispyonion">Crispy Onions</button>
-            </div>
-          </div>
-
-          <div class="control-block">
-            <h4>Sauce</h4>
-            <div class="pill-group" data-group="sauce">
-              <button type="button" class="pill active" data-value="house">House Sauce</button>
-              <button type="button" class="pill" data-value="chipotle">Chipotle</button>
-              <button type="button" class="pill" data-value="aioli">Garlic Aioli</button>
-              <button type="button" class="pill" data-value="none">None</button>
-            </div>
-          </div>
-
-          <div class="control-block">
-            <h4>Bun</h4>
-            <div class="pill-group" data-group="bun">
-              <button type="button" class="pill active" data-value="potato">Potato Bun</button>
-              <button type="button" class="pill" data-value="brioche">Brioche</button>
-              <button type="button" class="pill" data-value="lettucewrap">Lettuce Wrap</button>
-            </div>
-          </div>
-
-          <button class="btn btn-primary btn-wide" id="addToOrder">Add To Order — <span id="btnPrice">$3.00</span></button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- THE SEAR -->
-  <section class="sear">
-    <div class="sear-grid" aria-hidden="true"></div>
-    <div class="sear-inner reveal">
-      <p class="eyebrow">The Sear</p>
-      <p class="sear-quote">"One press.<br>The crust is<br><span class="accent">decided.</span>"</p>
-      <p class="sear-sub">260°C flat-top, 45 seconds a side. Everything after that is just topping.</p>
-    </div>
-  </section>
-
-  <!-- SOURCING -->
-  <section class="section" id="sourcing">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">Sourcing</p>
-        <h2 class="h2">Why A Smash Burger <span class="accent">Needs More Control,</span> Not Less.</h2>
+        <p class="eyebrow">Über Uns</p>
+        <h2 class="h2">Burger-Leidenschaft <span class="accent">Mit Blick Aufs Wasser.</span></h2>
+        <p class="lead">Bei Seaside Smashies dreht sich alles um einen einzigen Anspruch: den besten Smashburger der Ostschweiz zu machen. Unser Rindfleisch wird auf der heissen Plancha frisch gesmasht, für maximal krosse Ränder und einen saftigen Kern — jede Bestellung frisch, jede Sauce hausgemacht.</p>
       </div>
       <div class="source-grid">
         <div class="source-card reveal">
           <span class="source-index">01</span>
-          <h3>Beef</h3>
-          <p>Fresh-ground daily, 80/20, never frozen. Delivered before sunrise, smashed within the hour.</p>
+          <h3>Frisch Gesmasht</h3>
+          <p>Kein Fastfood von der Stange — jeder Patty wird live für dich auf der Plancha gebraten.</p>
         </div>
         <div class="source-card reveal">
           <span class="source-index">02</span>
-          <h3>Buns</h3>
-          <p>Potato buns from a bakery three streets over, toasted to order on the flat-top's edge.</p>
+          <h3>Take-away &amp; Lieferung</h3>
+          <p>Genuss to go, oder bequem nach Hause geliefert — ganz wie es dir passt.</p>
         </div>
         <div class="source-card reveal">
           <span class="source-index">03</span>
-          <h3>Cheese</h3>
-          <p>American, pepper-jack, cheddar — melted against the crust, never microwaved on.</p>
+          <h3>Hunde Willkommen</h3>
+          <p>Vierbeiner sind bei uns im Innenbereich jederzeit herzlich willkommen.</p>
         </div>
         <div class="source-card reveal">
           <span class="source-index">04</span>
-          <h3>Produce</h3>
-          <p>Lettuce, tomato, onion and pickles, delivered morning-of and prepped entirely by hand.</p>
-        </div>
-        <div class="source-card reveal">
-          <span class="source-index">05</span>
-          <h3>House Sauce</h3>
-          <p>Small-batch, made in-house, unchanged since the first cart on the pier. Recipe stays with us.</p>
-        </div>
-        <div class="source-card reveal">
-          <span class="source-index">06</span>
-          <h3>Oil</h3>
-          <p>Fries finished in clean peanut oil, double-fried, salted at the pass — never held under a lamp.</p>
+          <h3>Sitzplätze Im Freien</h3>
+          <p>Geniesse deinen Burger draussen, direkt am Bodensee, mit Seeblick.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- STORY -->
-  <section class="section story" id="story">
-    <div class="container story-grid">
-      <div class="story-copy reveal">
-        <p class="eyebrow">Our Story</p>
-        <h2 class="h2">Six Feet From The Water, <span class="accent">One Flat-Top From Greatness.</span></h2>
-        <p>Seaside Smashburger started as a single flat-top wheeled to the end of a pier — no menu, no plan, just a hot griddle and a hard press. What kept people walking back down that pier wasn't a gimmick. It was the crust.</p>
-        <p>We never grew the menu. We grew the line. Four builds, the same four sides, the same house sauce — just more people showing up before we've finished heating the griddle.</p>
-        <div class="story-marks">
-          <div><strong>2019</strong><span>First cart, end of the pier</span></div>
-          <div><strong>2021</strong><span>First stand, same four burgers</span></div>
-          <div><strong>Now</strong><span>Same griddle. Same crust. Longer line.</span></div>
-        </div>
+  <!-- SPEISEKARTE -->
+  <section class="section section-alt" id="speisekarte">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Speisekarte</p>
+        <h2 class="h2">Unsere <span class="accent">Smash-Klassiker.</span></h2>
+        <p class="lead">Alle Preise inkl. MwSt.</p>
       </div>
-      <div class="story-visual reveal" aria-hidden="true">
-        <div class="story-plate">
-          <span class="ring ring-1"></span>
-          <span class="ring ring-2"></span>
-          <span class="ring ring-3"></span>
-          <svg viewBox="0 0 200 120">
-            <path d="M10 60 Q 60 20 100 60 Q 140 20 190 60" stroke="#d92b3f" stroke-width="4" fill="none" stroke-linecap="round"/>
-            <path d="M10 80 Q 60 100 100 80 Q 140 100 190 80" stroke="#f6f1e7" stroke-width="4" fill="none" stroke-linecap="round" opacity=".5"/>
-          </svg>
-        </div>
+
+      <div class="tabs reveal" role="tablist">
+        <button class="tab active" data-tab="double">Double Smashies</button>
+        <button class="tab" data-tab="single">Single Smashies</button>
+        <button class="tab" data-tab="chicken">Chicken Smashies</button>
+        <button class="tab" data-tab="veggie">Veggie Falafel</button>
+        <button class="tab" data-tab="pepito">Homemade Pepito</button>
+        <button class="tab" data-tab="snacks">Snacks</button>
+        <button class="tab" data-tab="drinks">Getränke</button>
+      </div>
+
+      <div class="menu-grid" data-panel="double">
+        <article class="menu-card reveal">
+          <div class="menu-card-top"><span class="menu-tag">Double</span><span class="menu-price">CHF 12.90</span></div>
+          <h3>Double Smashies Classic</h3>
+          <p>Brioche Bun, 2x Smash Rindfleisch-Patty, Salat, Tomaten, Zwiebeln, Essiggurken.</p>
+        </article>
+        <article class="menu-card reveal">
+          <div class="menu-card-top"><span class="menu-tag">Double</span><span class="menu-price">CHF 13.90</span></div>
+          <h3>Double Smashies Cheesy</h3>
+          <p>Brioche Bun, 2x Smash Rindfleisch-Patty, Cheddar, Salat, Tomaten, Zwiebeln, Essiggurken.</p>
+        </article>
+        <article class="menu-card reveal">
+          <div class="menu-card-top"><span class="menu-tag">Double</span><span class="menu-price">CHF 14.90</span></div>
+          <h3>Double Smashies Seaside</h3>
+          <p>Brioche Bun, 2x Smash Rindfleisch-Patty, Cheddar, Salat, Tomaten, Zwiebeln, Ei, Essiggurken.</p>
+        </article>
+      </div>
+
+      <div class="menu-grid" data-panel="single" hidden>
+        <article class="menu-card reveal">
+          <div class="menu-card-top"><span class="menu-tag">Single</span><span class="menu-price">CHF 10.90</span></div>
+          <h3>Single Smashies Classic</h3>
+          <p>Brioche Bun, Smash Rindfleisch-Patty, Salat, Tomaten, Zwiebeln, Essiggurken.</p>
+        </article>
+        <article class="menu-card reveal">
+          <div class="menu-card-top"><span class="menu-tag">Single</span><span class="menu-price">CHF 11.90</span></div>
+          <h3>Single Smashies Cheesy</h3>
+          <p>Brioche Bun, Smash Rindfleisch-Patty, Cheddar, Salat, Tomaten, Zwiebeln, Essiggurken.</p>
+        </article>
+        <article class="menu-card reveal">
+          <div class="menu-card-top"><span class="menu-tag">Single</span><span class="menu-price">CHF 12.90</span></div>
+          <h3>Single Smashies Seaside</h3>
+          <p>Brioche Bun, Smash Rindfleisch-Patty, Cheddar, Salat, Tomaten, Zwiebeln, Ei, Essiggurken.</p>
+        </article>
+      </div>
+
+      <div class="menu-grid" data-panel="chicken" hidden>
+        <article class="menu-card reveal">
+          <div class="menu-card-top"><span class="menu-tag">Chicken</span><span class="menu-price">CHF 12.90</span></div>
+          <h3>Chicken Smashies Classic</h3>
+          <p>Brioche Bun, knuspriges Pouletfilet, Salat, Tomaten, Zwiebeln, Essiggurken.</p>
+        </article>
+        <article class="menu-card reveal">
+          <div class="menu-card-top"><span class="menu-tag">Chicken</span><span class="menu-price">CHF 13.90</span></div>
+          <h3>Chicken Smashies Cheesy</h3>
+          <p>Brioche Bun, knuspriges Pouletfilet, Cheddar, Salat, Tomaten, Zwiebeln, Essiggurken.</p>
+        </article>
+        <article class="menu-card reveal">
+          <div class="menu-card-top"><span class="menu-tag">Chicken</span><span class="menu-price">CHF 14.90</span></div>
+          <h3>Chicken Smashies Seaside</h3>
+          <p>Brioche Bun, knuspriges Pouletfilet, Salat, Tomaten, Zwiebeln, Ei, Essiggurken.</p>
+        </article>
+      </div>
+
+      <div class="menu-grid" data-panel="veggie" hidden>
+        <article class="menu-card reveal">
+          <div class="menu-card-top"><span class="menu-tag">Veggie</span><span class="menu-price">CHF 12.90</span></div>
+          <h3>Veggie Falafel Smashies Classic</h3>
+          <p>Brioche Bun, Falafel, Salat, Tomaten, Zwiebeln, Essiggurken.</p>
+        </article>
+        <article class="menu-card reveal">
+          <div class="menu-card-top"><span class="menu-tag">Veggie</span><span class="menu-price">CHF 13.90</span></div>
+          <h3>Veggie Falafel Smashies Cheesy</h3>
+          <p>Brioche Bun, Falafel, Cheddar, Salat, Tomaten, Zwiebeln, Essiggurken.</p>
+        </article>
+      </div>
+
+      <div class="menu-grid" data-panel="pepito" hidden>
+        <article class="menu-card reveal">
+          <div class="menu-card-top"><span class="menu-tag">Pepito</span><span class="menu-price">CHF 13.90</span></div>
+          <h3>Homemade Pepito Classic</h3>
+          <p>Baguettebrot, Pouletfleischstreifen, Salat, Tomaten, Zwiebeln, Essiggurken.</p>
+        </article>
+        <article class="menu-card reveal">
+          <div class="menu-card-top"><span class="menu-tag">Pepito</span><span class="menu-price">CHF 14.90</span></div>
+          <h3>Homemade Pepito Cheesy</h3>
+          <p>Baguettebrot, Pouletfleischstreifen, Cheddar, Salat, Tomaten, Zwiebeln, Essiggurken.</p>
+        </article>
+        <article class="menu-card reveal">
+          <div class="menu-card-top"><span class="menu-tag">Pepito</span><span class="menu-price">CHF 15.90</span></div>
+          <h3>Homemade Pepito Seaside</h3>
+          <p>Baguettebrot, Pouletfleischstreifen, Cheddar, Salat, Tomaten, Zwiebeln, Ei, Essiggurken.</p>
+        </article>
+      </div>
+
+      <div class="menu-grid" data-panel="snacks" hidden>
+        <article class="menu-card reveal">
+          <div class="menu-card-top"><span class="menu-tag">Snack</span><span class="menu-price">CHF 5.90</span></div>
+          <h3>Pommes Frites</h3>
+          <p>Knusprige Kartoffelpommes.</p>
+        </article>
+        <article class="menu-card reveal">
+          <div class="menu-card-top"><span class="menu-tag">Snack</span><span class="menu-price">CHF 7.90</span></div>
+          <h3>Sweet Potatoes</h3>
+          <p>Süsskartoffel-Pommes.</p>
+        </article>
+        <article class="menu-card reveal">
+          <div class="menu-card-top"><span class="menu-tag">Snack</span><span class="menu-price">CHF 7.90</span></div>
+          <h3>Country Potatoes</h3>
+          <p>Kartoffel-Wedges.</p>
+        </article>
+        <article class="menu-card reveal">
+          <div class="menu-card-top"><span class="menu-tag">Snack</span><span class="menu-price">CHF 8.50</span></div>
+          <h3>Mozzarella Sticks (6 Stück)</h3>
+          <p>Mozzarella in knuspriger Panade.</p>
+        </article>
+        <article class="menu-card reveal">
+          <div class="menu-card-top"><span class="menu-tag">Snack</span><span class="menu-price">CHF 8.90</span></div>
+          <h3>Chicken Nuggets (6 Stück)</h3>
+          <p>Poulet in knuspriger Panade.</p>
+        </article>
+      </div>
+
+      <div class="menu-grid" data-panel="drinks" hidden>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Bier</span><span class="menu-price">CHF 5.50</span></div><h3>Bier Dose 5dl</h3><p>Schützengarten.</p></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Drink</span><span class="menu-price">CHF 3.90</span></div><h3>Fanta Orange Dose</h3></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Drink</span><span class="menu-price">CHF 3.90</span></div><h3>Fanta Mango Drachenfrucht Dose</h3></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Drink</span><span class="menu-price">CHF 3.90</span></div><h3>Fanta Exotic Dose</h3></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Drink</span><span class="menu-price">CHF 3.90</span></div><h3>Coca Cola Dose</h3></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Drink</span><span class="menu-price">CHF 3.90</span></div><h3>Coca Cola Zero Dose</h3></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Drink</span><span class="menu-price">CHF 3.90</span></div><h3>Coca Cola Vanille Dose</h3></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Drink</span><span class="menu-price">CHF 3.90</span></div><h3>Oasis Tropical Dose</h3></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Drink</span><span class="menu-price">CHF 3.90</span></div><h3>Oasis Erdbeere Dose</h3></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Drink</span><span class="menu-price">CHF 3.90</span></div><h3>Oasis Cassis Dose</h3></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Drink</span><span class="menu-price">CHF 3.90</span></div><h3>Oasis Apfel Dose</h3></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Drink</span><span class="menu-price">CHF 3.90</span></div><h3>Hawai Tropical Dose</h3></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Ice Tea</span><span class="menu-price">CHF 3.90</span></div><h3>Esta The Peach Dose</h3></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Ice Tea</span><span class="menu-price">CHF 3.90</span></div><h3>Esta The Lemon Dose</h3></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Drink</span><span class="menu-price">CHF 4.50</span></div><h3>Coca Cola Pet</h3></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Drink</span><span class="menu-price">CHF 4.50</span></div><h3>Coca Cola Zero Pet</h3></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Drink</span><span class="menu-price">CHF 4.50</span></div><h3>Fanta Orange Pet</h3></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Wasser</span><span class="menu-price">CHF 4.50</span></div><h3>Valser Still Pet</h3></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Wasser</span><span class="menu-price">CHF 4.50</span></div><h3>S. Pellegrino Pet</h3></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Energy</span><span class="menu-price">CHF 4.50</span></div><h3>Red Bull</h3></article>
+        <article class="menu-card reveal"><div class="menu-card-top"><span class="menu-tag">Energy</span><span class="menu-price">CHF 4.50</span></div><h3>Red Bull Sugar Free</h3></article>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <div class="testimonials" aria-hidden="false">
-    <p class="eyebrow center reveal">What People Say</p>
+  <!-- DIE PLANCHA -->
+  <section class="sear">
+    <div class="sear-grid" aria-hidden="true"></div>
+    <div class="sear-inner reveal">
+      <p class="eyebrow">Die Plancha</p>
+      <p class="sear-quote">"Ein Press.<br>Die Kruste ist<br><span class="accent">entschieden.</span>"</p>
+      <p class="sear-sub">Heisse Plancha, wenige Sekunden pro Seite. Alles danach ist nur noch Topping.</p>
+    </div>
+  </section>
+
+  <!-- BEWERTUNGEN -->
+  <section class="section" id="bewertungen">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Bewertungen</p>
+        <h2 class="h2">Was Unsere <span class="accent">Gäste Sagen.</span></h2>
+      </div>
+    </div>
+  </section>
+
+  <div class="testimonials">
     <div class="testi-track">
-      <blockquote>“The crust on this thing should be illegal.” <cite>— L. Marsh</cite></blockquote>
-      <blockquote>“Ordered the Double Tide once. Now it's every Friday.” <cite>— R. Cole</cite></blockquote>
-      <blockquote>“Best burger within walking distance of any beach.” <cite>— J. Tam</cite></blockquote>
-      <blockquote>“They said no upsell ladder and meant it. Refreshing.” <cite>— A. Voss</cite></blockquote>
-      <blockquote>“The crust on this thing should be illegal.” <cite>— L. Marsh</cite></blockquote>
-      <blockquote>“Ordered the Double Tide once. Now it's every Friday.” <cite>— R. Cole</cite></blockquote>
-      <blockquote>“Best burger within walking distance of any beach.” <cite>— J. Tam</cite></blockquote>
-      <blockquote>“They said no upsell ladder and meant it. Refreshing.” <cite>— A. Voss</cite></blockquote>
+      <blockquote>"Bester Smashburger, den ich in der Schweiz gegessen habe. Saftig, krosse Ränder, einfach perfekt!" <cite>— Michael R., Google</cite></blockquote>
+      <blockquote>"Lieferung war super schnell und der Burger noch heiss und knusprig. Absolute Empfehlung!" <cite>— Laura S., Just Eat</cite></blockquote>
+      <blockquote>"Tolle Lage am See, mega freundliches Team und mein Hund durfte sogar mit rein. Kommen wieder!" <cite>— Fabio T., Google</cite></blockquote>
+      <blockquote>"Bester Smashburger, den ich in der Schweiz gegessen habe. Saftig, krosse Ränder, einfach perfekt!" <cite>— Michael R., Google</cite></blockquote>
+      <blockquote>"Lieferung war super schnell und der Burger noch heiss und knusprig. Absolute Empfehlung!" <cite>— Laura S., Just Eat</cite></blockquote>
+      <blockquote>"Tolle Lage am See, mega freundliches Team und mein Hund durfte sogar mit rein. Kommen wieder!" <cite>— Fabio T., Google</cite></blockquote>
     </div>
   </div>
 
-  <!-- VISIT / RESERVE -->
-  <section class="visit" id="visit">
+  <!-- STANDORT -->
+  <section class="visit" id="standort">
     <div class="container visit-grid">
       <div class="visit-copy reveal">
-        <p class="eyebrow">Visit</p>
-        <h2 class="h2">Table By The Tide,<br><span class="accent">Or Order To Go.</span></h2>
+        <p class="eyebrow">Standort &amp; Kontakt</p>
+        <h2 class="h2">Besuch Uns<br><span class="accent">In Staad.</span></h2>
         <div class="visit-actions">
-          <a href="#" class="btn btn-primary">Reserve A Table</a>
-          <a href="#" class="btn btn-outline">Order Pickup</a>
+          <a href="tel:+41718555056" class="btn btn-primary">Jetzt anrufen</a>
+          <a href="https://www.just-eat.ch" target="_blank" rel="noopener" class="btn btn-outline">Auf Just Eat bestellen</a>
         </div>
       </div>
       <div class="visit-info reveal">
         <div class="info-row">
-          <span>Address</span>
-          <strong>1 Harbor Front Ave, Seaside</strong>
+          <span>Adresse</span>
+          <strong>Hauptstrasse 2<br>9422 Staad, Schweiz</strong>
         </div>
         <div class="info-row">
-          <span>Hours</span>
-          <strong>Tue – Sun, 11:00 – 21:00<br>Closed Monday</strong>
+          <span>Öffnungszeiten</span>
+          <strong>Di – Do 11:30 – 21:00<br>Fr – Sa 11:30 – 22:00<br>So 12:00 – 21:00<br>Mo geschlossen</strong>
         </div>
         <div class="info-row">
-          <span>Phone</span>
-          <strong>+1 (555) 019-2027</strong>
+          <span>Telefon</span>
+          <strong><a href="tel:+41718555056">+41 71 855 50 56</a></strong>
+        </div>
+        <div class="info-row">
+          <span>Preisklasse</span>
+          <strong>CHF 10 – 20</strong>
         </div>
       </div>
     </div>
+    <div class="container">
+      <div class="map-wrap reveal">
+        <iframe
+          title="Seaside Smashies Standort auf Google Maps"
+          src="https://www.google.com/maps?q=Hauptstrasse+2,+9422+Staad,+Schweiz&output=embed"
+          width="100%" height="100%" style="border:0" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
   </section>
+
+  <!-- SOCIAL -->
+  <div class="social-cta">
+    <p class="eyebrow center reveal">Folge Uns</p>
+    <h2 class="h2 center reveal">Seaside Smashies <span class="accent">Auf TikTok.</span></h2>
+    <p class="lead center reveal">Behind the scenes, Smash-Action und die neusten Kreationen.</p>
+    <div class="center reveal" style="margin-top:28px;">
+      <a href="https://www.tiktok.com/@seasidesmashies" target="_blank" rel="noopener" class="btn btn-outline">@seasidesmashies auf TikTok</a>
+    </div>
+  </div>
 
 </main>
 
@@ -476,34 +508,34 @@
       <span class="brand-mark" aria-hidden="true">
         <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="4"/><path d="M14 55c10-14 24-14 36-2 12 12 26 12 36-2" stroke="currentColor" stroke-width="7" fill="none" stroke-linecap="round"/></svg>
       </span>
-      <p>Thin-smashed, hard-seared, stacked high. Four builds, no upsell ladder, since 2019.</p>
+      <p>Frisch gesmashte Burger direkt am Bodensee in Staad.</p>
     </div>
     <div class="footer-col">
-      <h5>Explore</h5>
-      <a href="#menu">Menu</a>
-      <a href="#build">Build Yours</a>
-      <a href="#story">Story</a>
-      <a href="#visit">Locations</a>
+      <h5>Navigation</h5>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#speisekarte">Speisekarte</a>
+      <a href="#bewertungen">Bewertungen</a>
+      <a href="#standort">Standort</a>
     </div>
     <div class="footer-col">
-      <h5>Visit</h5>
-      <a href="#visit">1 Harbor Front Ave, Seaside</a>
-      <a href="#visit">Tue – Sun, 11:00 – 21:00</a>
-      <a href="tel:+15550192027">+1 (555) 019-2027</a>
+      <h5>Kontakt</h5>
+      <a href="#standort">Hauptstrasse 2, 9422 Staad</a>
+      <a href="tel:+41718555056">+41 71 855 50 56</a>
+      <a href="https://www.tiktok.com/@seasidesmashies" target="_blank" rel="noopener">TikTok</a>
     </div>
     <div class="footer-col">
-      <h5>Follow</h5>
-      <a href="#">Instagram</a>
-      <a href="#">TikTok</a>
-      <a href="#">Order Online</a>
+      <h5>Öffnungszeiten</h5>
+      <a href="#standort">Di – Do: 11:30 – 21:00</a>
+      <a href="#standort">Fr – Sa: 11:30 – 22:00</a>
+      <a href="#standort">So: 12:00 – 21:00 · Mo: Geschlossen</a>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2026 Seaside Smashburger. All rights reserved.</span>
-    <span>Smashed daily. Never frozen.</span>
+    <span>© 2026 Seaside Smashies. Alle Rechte vorbehalten.</span>
+    <span>Frisch gesmasht. Nie tiefgekühlt.</span>
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
