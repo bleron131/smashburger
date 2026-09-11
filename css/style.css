@@ -354,37 +354,31 @@ ul{ list-style:none; margin:0; padding:0; }
 .tab.active, .tab:hover{ background:var(--paper); color:var(--ink); border-color:var(--paper); }
 
 .menu-grid{
-  display:grid; grid-template-columns:repeat(2,1fr); gap:1px;
-  background:var(--line); border:1px solid var(--line);
+  display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+  gap:56px 40px;
 }
 .menu-grid[hidden]{ display:none; }
 .menu-card{
-  background:var(--ink); padding:40px; transition:background .3s;
-  display:flex; flex-direction:column; gap:14px;
-  position:relative; overflow:hidden;
+  background:transparent;
+  display:flex; flex-direction:column; gap:10px;
+  position:relative;
 }
-.menu-card::before{
-  content:""; position:absolute; inset:0; opacity:0; transition:opacity .4s;
-  background:radial-gradient(120% 100% at 100% 0%, rgba(217,43,63,.12), transparent 60%);
-}
-.menu-card:hover::before{ opacity:1; }
-.menu-card:hover{ background:var(--ink-raise); }
-.menu-card-top{ display:flex; justify-content:space-between; align-items:center; }
-.menu-tag{ font-size:.66rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--sea-light); }
-.menu-price{ font-family:var(--serif); font-size:1.3rem; color:var(--red); }
-.menu-card h3{ font-family:var(--serif); font-weight:600; font-size:1.6rem; margin:0; }
-.menu-card p{ font-size:.92rem; line-height:1.6; color:var(--paper-dim); margin:0; max-width:38ch; }
-
-.menu-card.featured{ grid-column:span 1; }
 .menu-card-image{
-  margin:-40px -40px 6px; height:220px; overflow:hidden; border-bottom:1px solid var(--line);
+  width:100%; height:320px; overflow:hidden; margin-bottom:6px;
 }
-.menu-card-image img{ width:100%; height:100%; object-fit:cover; }
+.menu-card-image img{
+  width:100%; height:100%; object-fit:cover;
+  transition:transform .6s var(--ease);
+}
+.menu-card:hover .menu-card-image img{ transform:scale(1.045); }
+.menu-tag{ font-size:.7rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--sea-light); }
+.menu-card h3{ font-family:var(--serif); font-weight:700; font-size:1.7rem; margin:0; }
+.menu-card p{ font-size:.92rem; line-height:1.6; color:var(--paper-dim); margin:0; max-width:42ch; }
+.menu-price{ font-family:var(--serif); font-weight:700; font-size:1.9rem; color:var(--red); margin-top:4px; }
 
 @media (max-width:760px){
-  .menu-grid{ grid-template-columns:1fr; }
-  .menu-card{ padding:30px 24px; }
-  .menu-card-image{ margin:-30px -24px 6px; height:200px; }
+  .menu-grid{ grid-template-columns:1fr; gap:48px; }
+  .menu-card-image{ height:260px; }
 }
 
 /* ===================== SEAR ===================== */

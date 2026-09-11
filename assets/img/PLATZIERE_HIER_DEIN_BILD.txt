@@ -1,0 +1,12 @@
+Lege hier die Bilddatei "double_smashies_classic.jpg" ab.
+
+Wichtig: Der Dateiname muss exakt so lauten (Kleinbuchstaben, Unterstriche, Endung .jpg),
+damit die index.html das Bild automatisch findet:
+
+assets/img/double_smashies_classic.jpg
+
+Falls dein Bild eine andere Endung hat (z.B. .png oder .jpeg), musst du entweder
+die Datei in .jpg umbenennen, oder mir Bescheid geben, damit ich den Pfad in der
+index.html anpasse.
+
+Diese Textdatei kannst du danach löschen.
