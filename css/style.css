@@ -408,9 +408,8 @@ ul{ list-style:none; margin:0; padding:0; }
 
 .source-grid{
   display:grid; grid-template-columns:repeat(3,1fr); gap:1px;
-  background:var(--line); border:1px solid var(--line);
 }
-.source-card{ background:var(--ink); padding:44px 36px; }
+.source-card{ background:var(--ink); padding:44px 36px; border:1px solid var(--line); }
 .source-index{ font-family:var(--serif); font-size:.9rem; color:var(--red); }
 .source-card h3{ font-family:var(--serif); font-weight:600; font-size:1.3rem; margin:16px 0 12px; }
 .source-card p{ font-size:.88rem; line-height:1.6; color:var(--paper-dim); margin:0; }
